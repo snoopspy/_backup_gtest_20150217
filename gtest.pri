@@ -1,5 +1,7 @@
-DEFINES+=_VARIADIC_MAX=10
-DEFINES+=GTEST
+win32 {
+	DEFINES += _VARIADIC_MAX=10
+}
+DEFINES += GTEST
 
 #-------------------------------------------------
 # gtest
@@ -31,5 +33,4 @@ win32:contains(QMAKE_TARGET.arch, x86_64) {
     }
   }
 }
-linux:LIBS += -L$${GTEST_PATH} -lgtest
-
+linux:LIBS += -L$${GTEST_PATH}/lib -lgtest
