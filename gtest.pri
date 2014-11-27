@@ -34,4 +34,3 @@ win32:contains(QMAKE_TARGET.arch, x86_64) {
 	}
 }
 linux:LIBS += -L$${GTEST_PATH}/lib -lgtest
-
