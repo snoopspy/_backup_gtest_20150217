@@ -24,6 +24,4 @@
     libgtest_main.lai
 
 # How to Use
-    -L$PWD/lib -lgtest
-
-
+    -L$PWD/lib -lgtest -lgtest_main
